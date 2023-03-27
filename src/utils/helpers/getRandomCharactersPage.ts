@@ -1,0 +1,1 @@
+export const getRandomCharactersPage = () => Math.floor(Math.random() * (10 - 1) + 1)
