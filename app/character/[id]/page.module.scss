@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "photoAndName photoAndName restInfo restInfo restInfo"
+    "photoAndName photoAndName restInfo restInfo restInfo"
+    ". .  restInfo restInfo restInfo";
+}
+
+.photoAndName {
+  grid-area: photoAndName;
+}
+
+.restInfo {
+  grid-area: restInfo;
+  margin-top: 20px;
+}
+
+.restInfo span {
+  flex-wrap: wrap;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.image {
+  border-radius: 20%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+

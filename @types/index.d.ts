@@ -51,6 +51,7 @@ interface LocationFilter {
 interface EpisodeFilter {
   page?: number;
   name?: Episode['name'];
+  multiple?: string
 }
 
 interface Episode {

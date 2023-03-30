@@ -1,0 +1,25 @@
+
+.status_icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+}
+
+.alive {
+  background-color: green;
+
+}
+
+.dead {
+  background-color: red;
+
+}
+
+.unknown {
+  background-color: grey;
+}
+
+.status {
+  font-size: 20px;
+}

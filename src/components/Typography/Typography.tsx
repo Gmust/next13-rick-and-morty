@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 type Tag = 'div' | 'h1' | 'h2' | 'span' | 'p'
-type Variant = 'title-1' | 'body-1' | 'label' | 'body-2' | 'title-2'
+type Variant = 'title-1' | 'body-1' | 'label' | 'body-2' | 'title-2' | 'title-3' | 'label-2'
 
 
 interface TypographyProps {
