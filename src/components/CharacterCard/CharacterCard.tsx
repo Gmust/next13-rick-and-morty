@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
-import classNames from 'classnames';
+import Link from 'next/link';
 import { Typography } from '@/src/components';
-import styles from './CharacterContainer.module.scss';
 import { CharacterStatus } from '@components/CharacterStatus/CharacterStatus';
+import { ROUTES } from '@utils/constants';
+import styles from './CharacterContainer.module.scss';
 
 export interface CharacterCardProps {
   character: Character,
@@ -16,7 +17,9 @@ export const CharacterCard: FC<CharacterCardProps> = ({ character }) => {
     <div className={styles.container}>
       <Image src={character.image} alt={character.name + 'picture'} width={220} height={220} />
       <div className={styles.info_container}>
-        <Typography tag={'h2'} variant={'title-2'}>{character.name}</Typography>
+        <Typography tag={'h2'} variant={'title-2'} >
+          <Link href={`${ROUTES.CHARACTER}/${character.id}`}>{character.name}</Link>
+        </Typography>
 
         <CharacterStatus status={character.status} species={character.species} />
 

@@ -4,8 +4,7 @@ import styles from './page.module.scss';
 import { Typography } from '@/src/components';
 import React from 'react';
 import { CharacterStatus } from '@components/CharacterStatus/CharacterStatus';
-import { getAllEpisodes } from '@/src/service/episode';
-import { Episodes } from '@/app/character/[id]/components/Episodes';
+import { Episodes } from './Episodes';
 
 interface CharacterPageProps {
   params: {

@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useEffect, useState } from 'react';
 import { getAllEpisodes } from '@/src/service/episode';
-import styles from '../skeleton.module.scss';
+import styles from './skeleton.module.scss';
 
 interface Episodes {
   episodes: Character['episode'];

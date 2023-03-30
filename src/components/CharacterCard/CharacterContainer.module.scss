@@ -19,22 +19,24 @@
   display: flex;
   flex-direction: column;
   padding: 20px 15px;
+
+  a:hover {
+    color: orange;
+  }
 }
 
 .info_container span {
   padding: 4px;
   display: inline-flex;
   align-items: center;
+
+
 }
 
 
 .locationInfo {
   display: flex;
   flex-direction: column;
-
-  a:hover {
-    color: orange;
-  }
 
 }
 

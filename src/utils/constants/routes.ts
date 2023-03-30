@@ -1,4 +1,5 @@
 export const ROUTES = {
   CHARACTERS: '/characters',
-  MAIN: '/'
+  MAIN: '/',
+  CHARACTER: '/character'
 };
